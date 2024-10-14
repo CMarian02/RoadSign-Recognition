@@ -1,0 +1,22 @@
+path: C:/Users/CMarian/Desktop/PP/RoadSign-Recognition/dataset/stop
+train: train/images
+val: validation/images
+
+#Classes 
+nc: 1
+names: ['stop']
+
+Settings
+hsv_h: 0.0    # Nu schimbă nuanța (important pentru a păstra roșul semnului de STOP)
+hsv_s: 0.3    # Schimbare mică a saturării pentru a reflecta diferite condiții de lumină
+hsv_v: 0.2    # Schimbare mică a luminozității
+degrees: 0.0  # Fără rotire (semnul STOP trebuie să fie drept)
+translate: 0.1  # Mică translație, pentru variația poziției semnului STOP în imagine
+scale: 0.2    # Scalare moderată, fără variații extreme
+shear: 0.0    # Fără deformare
+flipud: 0.0   # Fără flip pe verticală
+fliplr: 0.0   # Fără flip pe orizontală (semnul STOP nu apare inversat)
+mosaic: 1.0   # Utilizează Mosaic pentru a crește diversitatea setului de date
+copy_paste: 0.0  # Copy-paste nu este necesar pentru acest task
+
+
